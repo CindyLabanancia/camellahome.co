@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <center>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        
+        <meta name="description" content="Your description">
+        <meta name="author" content="Your name">
+
+        
+        <meta property="og:type" content="website" /> 
+        <meta property="og:title" content="Camella Homes by BSIT"/> 
+        <meta property="og:description" content="Camella Homes - GROUP3" /> 
+        <meta property="og:image" content="" /> 
+        <meta property="og:url" content="https://camellahomesbygroup3.co" /> 
+        <meta name="twitter:card" content="summary_large_image"> 
+        
+        <title>Payroll</title>
+        
+        
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome-all.min.css" rel="stylesheet">
+        <link href="css/swiper.css" rel="stylesheet">
+        <link href="css/payroll.css" rel="stylesheet">
+    
+        
+        
+        <link rel="icon" href="Assets/3f281336eba50a7a11e04f38c3f20555-removebg-preview.png">
+    </head>
+    <body>
+     
+        <header class="ex-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-10 offset-xl-1">
+                        <h1>Camella Homes</h1>
+                    </div> 
+                </div> 
+            </div> 
+        </header>
+        
+    
+        <div id="payroll" name="payroll">
+            <div name="employee-info h1" id="employee-info h1">
+                <h1>Payroll System</h1>
+                   <table>
+                    <tr>
+                        <td>
+                            <form>
+                                <input type="text" id="employeeName" name="employeeName">
+                            </form>
+                        </td>
+                        <td>Name of Employee</td>
+                        <td><output name="eName" id="eName"></output></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form>
+                                <input type="number" id="dailySalary" name="dailySalary">
+                            </form>
+                        </td>
+                        <td>DAILY SALARY</td>
+                        <td>:Php <output name="eDSalary" id="eDSalary"></output></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form>
+                                <input type="number" id="daysOfWork" name="daysOfWork">
+                            </form>
+                        </td>
+                        <td>Days of Work</td>
+                        <td>:Php <output name="eDays" id="eDays"></output></td>
+                    </tr>	
+                    <tr>
+                        <td>
+                            <form>
+                                <input type="number" id="allowance" name="allowance" value="500" disabled>
+                            </form>
+                        </td>
+                        <td>Allowance per month</td>
+                        <td>:Php <output name="eAllow" id="eAllow"></output></td>
+                        <!-- submit button to output the total salary and store the data here -->
+                    </tr>	
+                    <tr>
+                        <td></td>
+                        <td>Total Salary</td>
+                        <td>:Php <output id="tSalary" name="tSalary"></output></td>
+                    </tr>
+                    
+                     </table>
+                </div>
+                <br>
+            </div>
+    
+            <hr width="80%">
+    
+            <div name="deductions" id="deductions">
+                <h2>DEDUCTIONS</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <form>
+                                <input type="number" id="sss" name="sss">
+                            </form>
+                        </td>
+                        <td>SSS</td>
+                        <td>:Php <output id="eSSS" name="eSSS"></output></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form>
+                                <input type="number" id="bir" name="bir">
+                            </form>
+                        </td>
+                        <td>BIR</td>
+                        <td>:Php <output id="eBir" name="eBir"></output></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form>
+                                <input type="number" id="pagIbig" name="pagIbig" value="100" disabled>
+                            </form>
+                        </td>
+                        <td>Tax</td>
+                        <td>:Php <output id="ePag" name="ePag"></output></td>
+                        <td>
+                            <button onclick="myFuntion()">Submit</button>
+                        </td>
+                        
+                    </tr>
+                </table>
+                <br>
+        
+    
+            <hr width="80%">
+    
+            <div name="total" id="total">
+                <table>
+                    <tr>				
+                        <td>TOTAL DEDUCTION</td>
+                        <td>:Php <output id="tDed" name="tDed"></output></td>
+                    </tr>
+                    <tr>
+                        <td>NET PAY</td>
+                        <td>:Php <output id="netPay" name="netPay"></output></td>					
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <form>
+                                <button onclick="window.print()">Print</button>
+                            </form>
+                        </td>
+                    </tr>
+                
+</table>
+            </div>
+        </div>
+
+                        
+                    </div> 
+                </div> 
+            </div>
+        </div>
+       
+        
+        <script src="js/bootstrap.min.js"></script> 
+        <script src="js/swiper.min.js"></script> 
+        <script src="js/purecounter.min.js"></script> 
+        <script src="js/isotope.pkgd.min.js"></script> 
+        <script src="js/scripts.js"></script> 
+        <script src="payroll.js"></script>
+    </center>
+    </body>
+</html>
